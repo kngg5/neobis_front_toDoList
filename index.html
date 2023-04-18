@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>Todo List</title>
+</head>
+<body>
+    
+        <div class="header">
+            <h2 class="client_name">
+                <label for="client"> What's up,<input type="text" id="name" placeholder="Name here"></label>
+            </h2>
+        </div>
+        <div class="create_todo">
+            <h3 class="todo_uppercase heading_wrap">Create a todo</h3>
+
+            <form id="nav-todo-form">
+                <h4 class="heading_wrap">What's on your todo list</h4>
+                <input type="text" name="content" id="content" placeholder="e.g. make a video">
+                <h4 class="heading_wrap">Pick a category</h4>
+                <div class="options">
+                    <label><input type="radio" name="category" id="category" class="business" value="business"><p>Business</p></label>
+                    <label><input type="radio" name="category" id="category" class="personal" value="personal"><p>Personal</p></label>
+                </div>
+                <input type="submit" id="submit" value="Add todo">
+            </form>
+        </div>
+
+        <div class="todo_list">
+            <h3 class="todo_uppercase heading_wrap">Todo list</h3>
+            <div class="list" id="todo_list">
+                <div class="todo_item">
+                    <input type="checkbox"/>
+                    <div class="todo_content">
+                        <input type="text" value="Make a video" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="todo_item">
+                    <input type="checkbox"/>
+                    <div class="todo_content">
+                        <input type="text" value="Make a video" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="todo_item">
+                    <input type="checkbox"/>
+                    <div class="todo_content">
+                        <input type="text" value="Make a video" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
