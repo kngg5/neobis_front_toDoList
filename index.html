@@ -26,8 +26,8 @@
                 <input type="text" name="content" id="content" placeholder="e.g. make a video">
                 <h4 class="heading_wrap">Pick a category</h4>
                 <div class="options">
-                    <label><input type="radio" name="category" id="category" class="business" value="business"><p>Business</p></label>
-                    <label><input type="radio" name="category" id="category" class="personal" value="personal"><p>Personal</p></label>
+                    <label><div id="check-hov-business"><input type="radio" name="category" id="category" class="business" value="business"></div><p>Business</p></label>
+                    <label><div id="check-hov-personal"><input type="radio" name="category" id="category" class="personal" value="personal"></div><p>Personal</p></label>
                 </div>
                 <input type="submit" id="submit" value="Add todo">
             </form>
@@ -35,37 +35,8 @@
 
         <div class="todo_list">
             <h3 class="todo_uppercase heading_wrap">Todo list</h3>
-            <div class="list" id="todo_list">
-                <div class="todo_item">
-                    <input type="checkbox"/>
-                    <div class="todo_content">
-                        <input type="text" value="Make a video" readonly>
-                    </div>
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div>
-                <div class="todo_item">
-                    <input type="checkbox"/>
-                    <div class="todo_content">
-                        <input type="text" value="Make a video" readonly>
-                    </div>
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div>
-                <div class="todo_item">
-                    <input type="checkbox"/>
-                    <div class="todo_content">
-                        <input type="text" value="Make a video" readonly>
-                    </div>
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div>
+            <div class="task_list" id="todo_list">
+
             </div>
         </div>
     
