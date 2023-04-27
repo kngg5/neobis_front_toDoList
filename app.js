@@ -73,8 +73,14 @@ window.addEventListener('load',()=> {
         });
 
         edit_button.addEventListener('click', () => {
-            task_name.removeAttribute("readonly");
-            task_name.focus();
+            if(edit_button.innerText.toLowerCase() == "edit") {
+                task_name.removeAttribute("readonly");
+                task_name.focus();
+                edit_button.innerText = "Save";
+            } else {
+                task_name.setAttribute("readonly","readonly");
+                edit_button.innerText = "Edit";
+            }
         })
 
         delete_button.addEventListener('click',() => {
